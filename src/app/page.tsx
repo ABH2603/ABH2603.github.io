@@ -1,7 +1,6 @@
 "use client";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { FaLinkedin, FaGithub, FaEnvelope, FaBriefcase, FaCode, FaStar, FaLightbulb } from "react-icons/fa";
 
 const sections = [
@@ -104,7 +103,7 @@ export default function Home() {
             }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
             style={{ opacity: 0.22 }}
-          />
+        />
           <motion.path
             d="M0,300 Q360,200 720,300 T1440,300 V600 H0 Z"
             fill="#0ea5e9"
@@ -133,7 +132,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.8, type: "spring" }}
             className="w-72 h-72 mb-10 rounded-3xl overflow-hidden border-4 border-blue-300 shadow-2xl bg-white relative"
           >
-            <Image src="/profile-placeholder.png" alt="Profile" fill style={{ objectFit: 'cover' }} />
+            <img src="/profile-placeholder.png" alt="Profile" className="absolute inset-0 w-full h-full object-cover" />
           </motion.div>
           <div className="bg-white/80 dark:bg-slate-900/80 rounded-2xl px-8 py-6 shadow-xl backdrop-blur-md">
             <h1 className="text-5xl md:text-6xl font-extrabold mb-2 tracking-tight drop-shadow-xl text-slate-900 dark:text-white">Alan Hong</h1>
@@ -232,7 +231,7 @@ export default function Home() {
                 <li>Used CS technical background to train 60 students in software development and data analysis, and assisted professor in instructional efforts.</li>
                 <li>Led initiatives to collaborate with professors and other TAs to provide additional detailed resources and course materials such as rubrics, autograders, and datasets.</li>
               </ul>
-            </div>
+        </div>
           </div>
         </div>
       </motion.section>
@@ -334,7 +333,7 @@ export default function Home() {
             </a>
             <a href="https://github.com/ABH2603" className="flex items-center gap-2 text-blue-500 hover:text-blue-700 font-semibold text-lg transition-colors dark:text-blue-300 dark:hover:text-blue-100" aria-label="GitHub">
               <FaLinkedin className="text-2xl" /> GitHub
-            </a>
+        </a>
           </div>
     </div>
       </motion.section>

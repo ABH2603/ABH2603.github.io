@@ -6,6 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
+    "deploy": "next build && gh-pages -d out --repo https://github.com/ABH2603/ABH2603.github.io",
     "lint": "next lint"
   },
   "dependencies": {
