@@ -151,7 +151,7 @@ export default function Home() {
         <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl shadow p-8 max-w-2xl mx-auto text-center mt-12">
           <h2 className="text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">About Me</h2>
           <p className="text-lg text-slate-700 dark:text-slate-200">
-            I'm an undergraduate student studying artificial intelligence at the University of Pennsylvania. I love building solutions that blend data, design, and real-world impact. Outside of tech, I enjoy DJing and playing instruments, weightlifting, swimming, and exploring unfiction.
+          I'm an undergraduate student studying artificial intelligence at the University of Pennsylvania. I love building solutions that blend data, design, and real-world impact. My interests span startups, backend systems, machine learning, and creating seamless user experiences.
           </p>
         </div>
       </section>
@@ -303,7 +303,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold">Interests</h2>
           </div>
           <div className="flex flex-wrap gap-6 justify-center">
-            {["DJing & Instruments", "Weightlifting", "Swimming", "Unfiction"].map(interest => (
+            {["DJing & Instruments", "Weightlifting", "Swimming"].map(interest => (
               <div key={interest} className="flex items-center gap-2 bg-slate-50 rounded-full px-6 py-3 border border-slate-200 shadow-sm text-blue-700 font-semibold text-lg dark:bg-slate-900 dark:border-slate-700 dark:text-blue-200">
                 <FaLightbulb className="text-blue-400" /> {interest}
               </div>
